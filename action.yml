@@ -1,0 +1,13 @@
+# action.yml
+name: 'license-finder'
+description: 'license-finder'
+inputs:
+  what-to-run:  # id of input
+    description: 'what to run'
+    required: true
+    default: 'node'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.what-to-run }}
