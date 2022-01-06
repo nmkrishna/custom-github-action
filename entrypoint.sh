@@ -16,7 +16,7 @@ case "$1" in
         go
         npm install -g npm@7.5.6
         npm install 
-        license_finder report --format html > license.html
+        /usr/local/bin/license_finder report --format html > license.html
         python3 parser.py > license.csv
         ;;
 esac
