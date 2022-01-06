@@ -10,6 +10,10 @@ case "$1" in
         cp -rf . .
         pwd
         ls
+        pip3 --version
+        mvn --version
+        node --version
+        go
         npm install -g npm@7.5.6
         npm install 
         license_finder report --format html > license.html
