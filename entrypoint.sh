@@ -2,6 +2,7 @@
 case "$1" in
     java)
         cp -rf . .
+        ls -lrt
         apt update -y
         apt install ruby-dev -y
         export PATH=/usr/share/rvm/rubies/ruby-2.7.1/bin:$PATH
