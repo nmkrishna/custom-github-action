@@ -14,7 +14,7 @@ case "$1" in
         gem install license_finder
         npm install -g npm@7.5.6
         npm install 
-        /usr/local/bin/license_finder report --format html > license.html
+        license_finder report --format html > license.html
         python3 parser.py > license.csv
         ;;
 esac
