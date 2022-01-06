@@ -15,7 +15,7 @@ case "$1" in
         apt install ruby-dev -y
         export PATH=/usr/share/rvm/rubies/ruby-2.7.1/bin:$PATH
         gem install license_finder
-        pip3 install -r requirement.txt
+        pip3 install -r requirements.txt
         license_finder report --python-version=3 --format html > license.html
         python3 parser.py > license.csv
         ;;
