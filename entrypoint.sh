@@ -8,6 +8,8 @@ case "$1" in
         ;;
     node)
         cp -rf . .
+        pwd
+        ls
         npm install -g npm@7.5.6
         npm install 
         license_finder report --format html > license.html
