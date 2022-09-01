@@ -24,9 +24,9 @@ case "$1" in
         ;;
     node)
         cp -rf . .
-        apt update -y
-        apt install ruby-dev -y
-        export PATH=/usr/share/rvm/rubies/ruby-2.7.1/bin:$PATH
+        apt-get update -y
+        apt-get install ruby -y
+        #export PATH=/usr/share/rvm/rubies/ruby-2.7.1/bin:$PATH
         gem install license_finder
         npm install -g npm@7.5.6
         npm install 
