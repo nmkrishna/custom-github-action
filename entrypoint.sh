@@ -19,6 +19,7 @@ case "$1" in
         python3 -m virtualenv MyEnv
         source MyEnv/bin/activate
         pip3 install -r requirements.txt
+        pip3 install bs4 lxml
         license_finder report --python-version=3 --format html > license.html
         python3 parser.py > license.csv
         ;;
