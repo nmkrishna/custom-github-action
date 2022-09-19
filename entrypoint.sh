@@ -6,7 +6,7 @@ case "$1" in
         apt-get install ruby -y
         #export PATH=/usr/share/rvm/rubies/ruby-2.7.1/bin:$PATH
         gem install license_finder
-        license_finder report --maven-include-groups=true --format html > license.html
+        license_finder ignored_groups report --maven-include-groups=true --format html > license.html
         python3 parser.py > license.csv
         ;;
     python)
